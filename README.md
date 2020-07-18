@@ -110,6 +110,28 @@ Azure has lots of services. you can see in left menue of portal.azure.com.
 		sql uid:mrinal
 		sql pass: admin.1234
 	
+
+# Function Apps
+	
+	Function app in azure are way where we can host a function without virtual machine. Anything we host without vm is termed also termed as serverless.
+	so function ap are noting but small code , small logic hosted on azure and for that we dont need to provide big vm. We can host it in serverless manner.
+	
+# How to create function app?
+	in azure left panel select function app. or click on + symbol in left panel => select computing option from list => select function App
+	name the function like mrinalfunction1
+	
+	i have created a http based function which can be triggered based on http called
+	
+	https://mrinalfunction1.azurewebsites.net/api/HttpTrigger2
+	https://mrinalfunction1.azurewebsites.net/api/HttpTrigger2?name=mrinal
+	
+	
+	we can also create it from vs. for this azure development kit need to be installed.
+	create new project > select Azure Function as template.
+	
+	
+	#ScaleController :
+	scalecontroller is one which is responsible for scaling your application. if it receive queue  then it create that number of instance and execure it.
 	
 
 	
