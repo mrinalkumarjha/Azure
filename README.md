@@ -65,6 +65,51 @@ Azure has lots of services. you can see in left menue of portal.azure.com.
 # Deployment >  Development Centre
 	Use this for creating ftp credentials.
 	
+# DTU AND EDTU
+
+
+#DTU : Database transaction unit.
+	one thing which attracted us on azure is pay as you go. pay only for what you want to use. 
+	we defin our work load in terms of processor, HD, RAM, transaction, no of users  => then decide our configuration like plan on azure => Then pay what we use.
+	
+	Here problem is how do you determine work load ? work load vary from one application to another , user to user. suppose you are creating web application, no of
+	user should matter for you. if you are using sql server then no of transaction should matter for you. for some people only ram is important. so workload
+	is calculated based on lots of factors. 
+	for example for rdbms following are things we should consider for configuration of work load.
+	
+	1. No of writes
+	2. No of reads
+	if above two is high then we consider work load is high. and if that is low we consider it is low.
+	3. Ram consumed: no of ram consumed writing to primary file and read from primary file.
+	4. Processor consumed for reading writing. > If you are reading and writing to file processor will be consumed so 
+		it should be considerable that how much percentage processor is needed.
+		
+	5.Log file: Log writen to sql log
+	
+    So who will tell us which pricing plan we have to choose. for this purpose microsoft has created DTU. 
+	
+	DTU is a unit specially for RDBMS which is calculated based on above 5 factor,and it gurantees performance for that configuration.
+	
+	So once we calculate our dtu we can choose plan in azure .
+	
+	we create our db in azure. allocate dtu to db. suppose added 5 dtu to db test. so this 5 dtu can only used for this db.
+	
+#EDTU : Elastic dtu. EDTU is same as dtu only difference is this dtu can be shared with multiple db. db1 and db2
+		we can set min and max in edtu. we need to set this as we dont want one database to take all dtu.
+		dtu is dedicated to single database but edtu is for multiple database. 
+		
+		we can use azure calculator (https://dtucalculator.azurewebsites.net/)
+		
+		1. download command line utility from above site. run the exe . exe should be execcuted from machine where
+		we need to calculate dtu.
+		it will create a csv file with all above 5 parameter and value.
+		
+		azure db created for testing purpose..
+		
+		server: mrinal.database.windows.net
+		sql uid:mrinal
+		sql pass: admin.1234
+	
 	
 
 	
