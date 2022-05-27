@@ -1,13 +1,18 @@
 # Azure
 
-When you goto host a website, a hosting provider has to provide lots of services to you. like he need to provide ram , bandwidth, hard disk, cpu , softwares and much more. These 
+When you goto host a website, a hosting provider has to provide lots of services to you. like he need to provide ram , bandwidth, hard disk, cpu , softwares and much more. when you buy hosting from godaddy it is not elastic in nature. it has standerd plan and you pay upfront for using it. but in cloud you have flexibility to upgrade your plan.
+These 
 services can be divided into following catagory
 
 	1: Infrastructure services(IAAS): Services like hard disk, firewall, ram, cpu, vm, bandwidth comes into IAAS service or infrastructure service. This layer is the
 		metal part of your hosting.
 		
-	2: Plateform service(PAAS): Services like OS, database, framework like donet, web server like iis apache is called plateform as a service.
+	2: Plateform service(PAAS): Services like OS, database, framework like donet, web server like iis apache is called plateform as a service. This layer makes
+		IAAS alive. hardware is skeleton without software.
 	3: Software service(SAAS): Invoicing, yahoo, gmail, Accounting, Control panel etc is comes in SAAS category.
+	Following is pictorial representation of all three above service.
+	![image](https://user-images.githubusercontent.com/3676282/170706480-4a914b55-3c2f-4197-bcd8-3067d9e5a662.png)
+
 
 IF you want to do all these by yourself if will be lots of hard work like for hosting you will have to create data center, software license, hardware, cpu, ram, technician,
 network guys, hardware engineer etc. By doing all things by itself it will cost too much. Instead we want to pay only we use.
@@ -29,7 +34,7 @@ So in cloud also service provider gives flexibility to its customer to use its l
 
 # What is Azure?
 
-	azure is microsoft implementation for cloud.
+	azure is microsoft implementation for cloud. it is the solution given by microsoft for cloud. 
 	
 
 # Where to register ?
